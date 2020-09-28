@@ -1,0 +1,36 @@
+\documentclass[11pt,a4,oneside]{article}
+
+\title{TITLE}
+\date{\today}
+\author{Calvin Nesbitt}
+
+% Using Global Style File
+%\newcommand{\styleLocation}{/Users/cfn18/Documents/PhD-Work/PhD-Latex-Repository/Style-Files} % Repository where style files are kept
+%\usepackage{\styleLocation/ style} % Read Style Package
+
+% Using Local Style File
+\usepackage{style}
+
+\begin{document}
+
+\maketitle 
+
+\input{tex/abstract} % Abstract
+
+% Contents
+\pagenumbering{roman}
+\tableofcontents 
+\newpage
+\pagenumbering{arabic}
+
+%
+%% Bibliography
+\clearpage 
+\bibliographystyle{alpha}
+\refstepcounter{section} 
+\addcontentsline{toc}{section}{References}
+ \newcommand{\bibLocation}{/Users/cfn18/Documents/PhD-Work/PhD-Latex-Repository/BibTex-Files} % Bibtex file repository
+\bibliography{\bibLocation /CLVs.bib} % Read Bibtex file
+
+\end{document}
+

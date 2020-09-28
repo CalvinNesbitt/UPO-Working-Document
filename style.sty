@@ -1,0 +1,64 @@
+\ProvidesPackage{style}
+
+% Margin Specification
+\usepackage{geometry}
+ \geometry{
+ a4paper,
+ total={170mm,257mm},
+ left=20mm,
+ top=20mm,
+ }
+
+% Read Pacakages
+\usepackage{physics}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{natbib}
+\usepackage{graphicx}
+\usepackage{mathtools}
+\usepackage{amsmath}
+\usepackage{csquotes}
+\usepackage[section]{placeins} %Floats restricted to sections
+\usepackage{titlesec} % Page break between sections
+\newcommand{\sectionbreak}{\clearpage}   % Page break between sections
+\usepackage{hyperref} % Clickable references
+\usepackage{siunitx} % SI units typeset
+\usepackage{todonotes} % Commenting package
+
+
+% Removing paragraph indents
+{\setlength{\parindent}{0cm}
+
+% Header & Footer
+\usepackage{fancyhdr} 
+\pagestyle{fancy} 
+\fancyhf{}
+\fancyhead[C,C]{\rightmark} 
+\fancyfoot[C,C]{\thepage}
+
+% Definition Environments
+\theoremstyle{plain}
+  \newtheorem{thm}{Theorem}[subsection]
+  \newtheorem{lem}[thm]{Lemma}
+  \newtheorem{prop}[thm]{Proposition}
+  \newtheorem*{cor}{Corollary}
+
+\theoremstyle{definition}
+  \newtheorem{defn}[thm]{Definition}
+  \newtheorem{exmp}[thm]{Example}
+
+\theoremstyle{remark}
+	\newtheorem*{rem}{Remark}
+	\newtheorem*{note}{Note}
+
+% Custom Commands %\newcommand{\name}[num]{definition}
+\newcommand{\Prob}{\mathbb{P}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\mdv}[1]{\frac{D #1}{Dt}} %Material derivative
+\newcommand{\fix}[2]{\left( #1 \right)_{#2}} %Derivative with fixed variable
+
+%Operators
+\DeclareMathOperator{\divtext}{div}
