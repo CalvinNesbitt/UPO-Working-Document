@@ -1,6 +1,6 @@
 \documentclass[11pt,a4,oneside]{article}
 
-\title{TITLE}
+\title{Unstable Periodic Orbits - Working Document}
 \date{\today}
 \author{Calvin Nesbitt}
 
@@ -13,24 +13,39 @@
 
 \begin{document}
 
-\maketitle 
+\maketitle
 
 \input{tex/abstract} % Abstract
 
-% Contents
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Contents
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \pagenumbering{roman}
-\tableofcontents 
+\tableofcontents
 \newpage
 \pagenumbering{arabic}
 
-%
-%% Bibliography
-\clearpage 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Literature Review
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\patha}{tex/Literature-Review}
+\section{Literature Review}
+\input{\patha /Cvit-1988.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Bibliography
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\clearpage
 \bibliographystyle{alpha}
-\refstepcounter{section} 
+\refstepcounter{section}
 \addcontentsline{toc}{section}{References}
  \newcommand{\bibLocation}{/Users/cfn18/Documents/PhD-Work/PhD-Latex-Repository/BibTex-Files} % Bibtex file repository
-\bibliography{\bibLocation /CLVs.bib} % Read Bibtex file
+\bibliography{\bibLocation /Chaos.bib} % Read Bibtex file
 
 \end{document}
-
